@@ -1,0 +1,85 @@
+Age: 24
+Gender: Male
+Race: Asian
+Occupation: Student
+Familiarity with domain: Good familiarity with the concept of data visualization
+
+Our Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: It is mapping the bike rent data on stations to specific locations on the map of LA. The histogram at the bottom makes the viewing of this data interactive by allowing us to select each each month individually. The circles also have different shapes according to number of rents.
+
+2. What do you think this visualization is trying to achieve?
+A: Trying to show how bike rents vary with location and also how it is changing with time.
+
+3. Does the visualization look appealing to you when you first see it?
+A: It looks good but I the lables on the histogram are weird. Instead of numbers, there should be name of month and year for each rectangle.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes it does. It easily lets me go through different month data and see the trend.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Interaction is smooth. I like the month selection feature. Also the box that appears when I hover over circles is neat.
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations?
+A: The Financial District at the center clearly has more stations.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: The question is a bit unclear but for one area, the bike rents are randomly disributed.
+
+3. What overall trend can be inferred from the bike rent data?
+A: It can be seen that the stations that were previously just at the Financial District are now also available in Santa Monica and South Pasadena. There are other minor clusters as well.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: Not equally distributed. It is focused on more busy areas. The eastern side has no stations at all.
+
+5. Are there any outliers in the bike share data?
+A: If you consider the small clusters around the city that contain few stations, yes I see outliers but otherwise no outliers.
+
+
+New York CitiBike Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: This one also maps the renting stations for NYC with a lot more options to filter data. I see the circles look similar to the previous visualization. Also selecting individual months in this one is a bit tougher.
+
+2. What do you think this visualization is trying to achieve?
+A: This one is showing the location of renting stations and the traffic flow on each station. So maybe its trying to show trends in bike rents in the city like the previous one but with a different approach.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Yes. I like the UI very much. The traffic flow animation is shown in a very interactive way and the data for each link also adds to it.
+
+4. Do you think the visualization fulfills its initial objective?
+A: It does in a way. Comparing the task to the previous one, I found it harder to filter through months in this one but to see the traffic flow, it was much easier.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Yes, there are a lot of interaction features here. The tooltips, individual station-to-station data selection and month filtering is actually pretty impressive.
+
+
+Close-Ended Questions
+
+1. Which area of NYC has more bike stations?
+A: Almost all areas have same number of stations but the central region seem more clustered together.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: There seems to be equal distribution but the circle encodes not just the rents but the drop offs too here. So, I don't think this graph is enough to answer this question.
+
+3. What overall trend can be inferred from the bike rent data?
+A: The use of bike share is high in NYC since I see large number of rents. And they also cover almost all of the city too so there is good implementation of this service.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: Yes in terms of the city, the bike rent system is equally distributed and it is also consistent throughout the months.
+
+5. Are there any outliers in the bike share data?
+A: Again, if you consider the stations in Jersey City as outliers, there are small clusters like that in Jersey City which are less dense.
+
+
+Comparing the two visualizations
+
+1. Do you prefer this visualization or the one shown before?
+A: For the common task for finding trends through different months, I think the visualization shown before helped more with it. So I prefer the previous one for this task.

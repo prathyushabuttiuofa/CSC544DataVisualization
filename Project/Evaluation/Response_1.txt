@@ -1,0 +1,86 @@
+Age: 22
+Gender: Male
+Race: Asian
+Occupation: Student
+Familiarity with domain: Brief familiarity with the domain
+
+Our Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: It is of a map of LA that shows the bike rentals in the form of circles and there are bar graphs at the bottom that show the rentals for each month.
+
+2. What do you think this visualization is trying to achieve?
+A: It is trying to show the change of bike rentals for every month. I can change the data for each month. The circle also shows how many bikes are rented from each place. Larger circles seem to mean more rented bikes.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Somewhat. It looks a bit rough around the edges and the bar graph looks a bit dull but the map looks nice.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes, I can see how some places have many rentals and some have less. Also as I go through the months, the stations increase in number. So I see a growing trend.
+
+5. Can you easily interact with the visualization without any confusions?
+A: I can. It is easy to interact. It took some time to load though.
+
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations?
+A: The middle part of the map seems to have many stations. There are many circles there. I'm guessing that is the Financial district.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: It is kind of random. I couldn't see a pattern here.
+
+3. What overall trend can be inferred from the bike rent data?
+A: It seems initially the stations were only at the middle part of LA but slowly it has expanded and there are some stations in Santa Monica near the beach too and also some in the North East side.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: It's not equally distributed. It's more popular in the middle area. I guess that part is more busier than the other that's why.
+
+5. Are there any outliers in the bike share data?
+A: I don't see any outliers.
+
+
+New York CitiBike Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: This shows a map of New York with blue circles showing bike renting stations. There are also a number of bar graphs showing different things and options to select stations.
+
+2. What do you think this visualization is trying to achieve?
+A: It shows how the stations are spread out in the city and the traffic that moves from and to the station.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Yes, the design is very nice with nice side bar layout.
+
+4. Do you think the visualization fulfills its initial objective?
+A: It does. The animation is very helpful in mapping the traffic on a station. The different colors was a good idea.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Yes, the interactions are really smooth. The data loads very fast in this one and zooming is smooth too.
+
+
+Close-Ended Questions
+
+1. Which area of NYC has more bike stations?
+A: I think all parts of the city have bike stations in this case.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: I see almost equal distribution. All the circles look the same size to me.
+
+3. What overall trend can be inferred from the bike rent data?
+A: There seems to be a large traffic all over the city. I also see lots of interconnection between even small stations and larger ones.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: Yes, the stations are almost equally distributed throughout the city.
+
+5. Are there any outliers in the bike share data?
+A: No I don't see any outliers.
+
+
+Comparing the two visualizations
+
+1. Do you prefer this visualization or the one shown before?
+A: I like this visualization more. It looks better and is smoother too.

@@ -1,0 +1,82 @@
+Age: 26
+Gender: Female
+Race: Asian
+Occupation: Friend who is of Engineering Background but chose to be a homemaker.
+Familiarity with domain: Not much.
+
+Our Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: I can see a geographic map of LA and circles at some places.
+
+2. What do you think this visualization is trying to achieve?
+A: When hovering on the circles I can see numbers on the them so probably representing the number of bikes.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Yes it looks good.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes I can find out the number of bikes at each place.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Yes, the interactions are smooth.
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations?
+A: The one with more circles has more bike stations.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: Bike rents are generally charged per minute as in Lime, Bird and Razor bikes in Tempe so it should be same everywhere and not area based.
+
+3. What overall trend can be inferred from the bike rent data?
+A: It's growing. 
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: Not equally distributed for sure. It is popular at the busiest places.
+
+5. Are there any outliers in the bike share data?
+A: I didn't find any.
+
+New York CitiBike Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: I can see a geographic map of NY and circles at some places with good interactions.
+
+2. What do you think this visualization is trying to achieve?
+A: Bike renting trends and distances covered.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Yes it looks good.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes I have many filtering options and can get which ever data I need.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Yes, the interactions are smooth.
+
+Close-Ended Questions
+
+1. Which area of NYC has more bike stations?
+A: The one with more crowded circles has more bike available.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: Bike rents are generally charged per minute as in Lime, Bird and Razor bikes in Tempe so it should be same everywhere and not area based.
+
+3. What overall trend can be inferred from the bike rent data?
+A: It's growing. 
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: Equally distributed for sure. It is popular at the busiest places.
+
+5. Are there any outliers in the bike share data?
+A: I didn't find any.
+
+Comparing the two visualizations?
+
+1. Do you prefer this visualization or the one shown before?
+A: I prefer NYC as it has more filtering options and this one needs more filtering options otherwise the purpose of visualization is achieved in finding just the number of bikes available at each station.

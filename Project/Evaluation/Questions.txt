@@ -1,0 +1,20 @@
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+2. What do you think this visualization is trying to achieve?
+3. Does the visualization look appealing to you when you first see it?
+4. Do you think the visualization fulfills its initial objective?
+5. Can you easily interact with the visualization without any confusions?
+
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations? (Replace LA with NYC for the visualization comparison)
+2. How are the bike rents distributed across a certain area of bike stations?
+3. What overall trend can be inferred from the bike rent data?
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+5. Are there any outliers in the bike share data?
+
+Comparing the two visualizations
+
+1. Do you prefer this visualization or the one shown before?

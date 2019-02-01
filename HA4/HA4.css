@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+div {
+    padding: 5px;
+}
+
+input {
+    width: 120px;
+}
+
+svg {
+    width: 800;
+    height: 700;
+    border: 1px black solid;
+}
+
+.container {
+    position: relative;
+}
+
+.node {
+    fill: cyan;
+    stroke: black;
+    stroke-width: 1pt;
+}
+
+.link {
+    stroke: black;
+    stroke-width: 1pt;
+}

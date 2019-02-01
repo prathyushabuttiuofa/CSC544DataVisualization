@@ -1,0 +1,82 @@
+Age: 30
+Gender: Male
+Race: Asian
+Occupation: Technical Consultant (Prathyusha's Husband)
+Familiarity with domain: Medium.
+
+Our Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: Bike rent locations on this map can be filtered using the bar graphs at the bottom.
+
+2. What do you think this visualization is trying to achieve?
+A: Users can determine where bikes are rented more.
+
+3. Does the visualization look appealing to you when you first see it?
+A: Not really. It looks good but not that eye-catching.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes the task they asked me to perform was easy and I can easily figure out it's purpose.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Interactions are smooth but data loads slowly. Needs some improvement in data loading.
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations?
+A: Santa Monica, LA Downtown, Venice Beach.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: The price should be uniform as far as my knowledge is concerned. There might not be any peak pricing for renting bikes as in Uber and Lyft. 
+
+3. What overall trend can be inferred from the bike rent data?
+A: Overall, Growing.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: There is unequal distribution. Its more popular in the LA Downtown as the city is congested and one may have to wait long hours in the traffic instead people might be opting for cycles.
+
+5. Are there any outliers in the bike share data?
+A: No.
+
+New York CitiBike Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: I can infer the bike availability, traffic and various filters that can be applied to the data.
+
+2. What do you think this visualization is trying to achieve?
+A: This visulaization provides good data filtering options. It helps users determine where the stations are, how is the traffic, the width of the line in between the stations is indicating the traffic flow which is so good to look at.
+
+3. Does the visualization look appealing to you when you first see it?
+A: This design is too good. It gives the users many options to study the trends.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes, definitely.
+
+5. Can you easily interact with the visualization without any confusions?
+A: No confusions smooth interactions in fact.
+
+Close-Ended Questions
+
+1. Which area of NYC has more bike stations?
+A: The bike stations are more between the area enclosed within Holland Tunnel and Willamsburg Bridge.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: The price should be uniform as far as my knowledge is concerned. There might not be any peak pricing for renting bikes as in Uber and Lyft.
+
+3. What overall trend can be inferred from the bike rent data?
+A: Overall, Growing.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: There is almost equal distribution in NYC. In congested places it is most popular.
+
+5. Are there any outliers in the bike share data?
+A: No.
+
+Comparing the two visualizations?
+
+1. Do you prefer this visualization or the one shown before?
+A: I prefer NYC anytime unless this visualization comes up with more options.

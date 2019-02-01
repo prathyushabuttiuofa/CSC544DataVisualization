@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+div {
+    padding: 5px;
+}
+
+input {
+    width: 120px;
+}
+
+svg {
+    width: 500;
+    height: 500;
+    border: 1px black solid;
+}
+
+button {
+    width: 120px;
+}
+
+textarea {
+    width: 120px;
+}
+
+.rowdetail {
+    font: 12pt sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.scatters {
+    display: inline-block;
+}
+
+.view {
+    display: inline-block;
+    width: 510px;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.invalid {
+    background-color: red;
+}

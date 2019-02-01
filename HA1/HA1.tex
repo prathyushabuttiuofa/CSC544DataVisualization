@@ -1,0 +1,135 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 1 \\
+	\large D3 : Data-Driven Documents \\}
+\date{August 31, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\noindent
+{\bf 1. What problem is this paper trying to solve and why is the problem
+   important?}
+
+{
+	This paper tries to solve the problem of visualization toolkits which encapsulates the DOM within a toolkit-specific abstraction as a result, representation-transparent approach to visualization for the web is compromised.
+
+	The problem is important because it effects the accessibility, expressiveness, efficiency, compatibility, debugging and performance of the visualization.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. How does this paper contribute to solving the problem? What approaches are
+   used? }
+
+{
+	This paper solves the problem by proposing Data-Driven Documents(D3), an embedded domain-specific language for transforming the DOM based on data.
+
+	This paper claims to compare D3 with exisiting web-based methods for visualization like Protovis, Processing and Rapha¨el in each possible aspect like Design, data, interactions and animations. They claim to improve the accesibility, expressiveness and performance of the visualization.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. How are the contributions of the paper evaluated or justified? }
+
+{
+	This paper evaluates it's contributions to the visualization area by carefully examining D3 with Provotis in various aspects like Design, Interactions and animations to mention a few.
+
+	This paper specifies the related work it has done to defend that D3 is better for visualization as it's approach and time taken to develop is minimal. D3 adopts W3C Selectors API to identify document elements for selection. If the developer knows the basic understanding of HTML, CSS and Javascript he must be able to start with D3. That is the simplicity of D3. 
+
+	This paper highlights the disdavantages of not providing a scenegraph that can be used for debugging purposes by other visualization frameworks.
+
+	This paper highlights D3 does not strictly impose a toolkit-specific lexicon of graphical marks. Instead, D3 directly maps data attributes to elements in the document object model.
+
+	D3 introduces query-driven selection and data binding to scenegraph elements, document transformation as an atomic operation, and immediate property evaluation semantics. This gives a huge advantage in performing visualization of various models.
+
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. What do you think are this paper's strengths? What do you think could be
+   improved? }
+
+{
+	The paper strengths are that it evaluates D3 in all possible aspects like usability, design, accesibility and adapatibility.
+
+	A subtle yet significant advantage of native representation is that selections can be retrieved from the document at any time.
+
+	D3 provides a transparent approach to visualization. Dynamic visualizations are easy to build.
+
+	D3 supports a hybrid architecture where visualizations are initially constructed on the server and dynamic behavior is bound on the client.
+
+	D3 automatically manages transition scheduling, guaranteeing per-element exclusivity and efficiency, consistent timing through a unified timer queue.
+
+	D3 also produces dynamic interaction and animation in both 2D and 3D with a minimal overhead. 
+
+	The functional style of D3 allows you to reuse codes through the various collection of components and plug-ins.
+
+}
+
+
+\vspace{2ex}\noindent
+{\bf 5. What are future directions for this work? Include both those suggested by
+   the authors and suggestions of your own.}
+
+{
+	The future directions of the work is enabling data-processing utilities.
+
+	A rich collection of statistical methods is needed to further develop specialized visualization modules. 
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 6. What questions do you have about this paper? For example: Were these things
+   you find difficult to understand? Are there details left unanswered? Do you
+have philsophical questions regarding some of the points made? }
+
+
+{
+	We connect to data effectively by properly visualizing it.  
+
+	This paper on D3 has nicely explained the concepts of D3. The paper is written in such a way that a layman can understand what the author is trying to say without any prior knowledge. 
+
+	I would like to know how actually accessibility is measured? 
+
+	How can we check whether all the features of D3 are browser compatible?
+
+	Approach to measure the page rendering or loading time is unclear.
+
+	I'm curious to further read about D3 to know how we can build an infographic with varied data.
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 7. How might the concepts or approaches in this paper relate to your course
+   project? If you don't yet have a course project in mind, answer the
+questions with your best guess of what your course project could be. }
+
+{
+	The concepts and approches enables me to develop a visualization model for any type of data that is provided.
+	The examples they have mentioned made me visualize how powerful it is to visualize data using D3. 
+
+	I would like to develop a visualization based on D3 on any social issues or any such thing and might narrow it down to a specific point which has not been surveyed so far. I'm still not sure of the course project but this my best guess of what my course project could be. I can effectively show how my analysis is going to be using D3 because humans tend to relate to data more by visualizing it than by reading it. 
+}
+
+
+\end{document}

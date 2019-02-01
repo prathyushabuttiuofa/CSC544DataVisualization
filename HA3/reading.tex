@@ -1,0 +1,115 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 3 \\
+   \large "Perfopticon: Visual Query Analysis for Distributed Databases" by Dominik Moritz, Daniel Halperin, Bill Howe, and Jeffrey Heer \\}
+\date{October 12, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\noindent
+{\bf 1. What problem is this paper trying to solve and why is the problem important?}
+
+{
+    The problem of the paper is that the distributed database performance is often unpredictable due to issues such as system complexity, network congestion, or imbalanced data distribution. These issues are difficult for users to assess in part due to the opaque mapping between declarative specified queries and actual physical execution plans. 
+    
+    The problem is important because database developers currently must expend significant time and effort scanning log files to isolate and debug the root causes of performance issues.
+
+   
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. How does this paper contribute to solving the problem? What approaches are used? }
+
+{
+   They present Perfopticon, an interactive query profiling tool that enables rapid insight into common problems such as performance bottlenecks and data skew. Perfopticon combines interactive visualizations of (1) query plans, (2) overall query execution, (3) data flow among servers, and (4) execution traces. These views coordinate multiple levels of abstraction to enable detection, isolation, and understanding of performance issues. They evaluate their design choices through engagements with system developers, scientists, and students. They demonstrate that Perfopticon enables performance debugging for real-world tasks.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. How are the contributions of the paper evaluated or justified? }
+
+{
+   To evaluate Perfopticon, they have performed a long-term deployment with database researchers and conducted informal studies with Myria users. They concluded that Perfopticon is valuable for database development, query writing and debugging, and teaching. They claim that users are able to resolve performance issues, optimize queries, understand new distributed join algorithms, and learn basic operating principles of distributed databases using Perfopticon. They have explained the usage of Perfopticon in different scenarios. 
+   
+   They didn't compare Perfopticon with other similar visualizations tools that are available in the market for distributed databases. 
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. What do you think are this paper's strengths? What do you think could be improved? }
+
+{
+    The paper's strengths is it's evaluation process that focuses on tasks like understanding the specific computations being performed after translation into a query plan, Obtain an overview of the work distribution to identify bottlenecks in the query plan, Understand distributed communication patterns to diagnose bottlenecks resulting from network effects,Trace local execution on each machine to diagnose bottlenecks resulting from non-distributed computation. 
+    
+    They have neatly justified their design decisions based on system restrictions, best practices, and results from interviews though they didn't mention their system restrictions clearly.
+    
+    The usage examples in section 6 is also the paper's strengths and the visualizations they have used were clearly justified as to why they were using them.
+    
+    They have taken a complex query to estimate the abundance of synechococcus, a common marine cyanobacterium, in data collected by ocean-deployed sensors and explained entire design of Perfopticon based on that. They didn't get into the details of previous performance of the query and on what parameters they were expecting a better performance. 
+    
+}
+
+
+\vspace{2ex}\noindent
+{\bf 5. What are future directions for this work? Include both those suggested by the authors and suggestions of your own.}
+
+{
+    They have planned to incorporate a reflective design using the database itself for storage and transformation of data.
+
+    They implemented binning to maintain client responsiveness at available pixel resolution. Need to improve in this part.
+
+
+    Perfopticon can be extended to show more contextual information about the local execution, or even be integrated with a local debugger. 
+
+    They need to include overall CPU and memory usage in the cluster and available/used network bandwidth in Perfopticon’s UI.
+
+    They have to explore visualizing performance over asynchronous iterations (without global iteration bounds) which adds another dimension of complexity. 
+
+    A current limitation of Perfopticon is the lack of support for comparison of multiple queries (other than using two instances of Perfopticon side by side). 
+   
+    They have to expand their horizons to No SQL database models and even other than myria database.
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 6. What questions do you have about this paper? For example: Were these things you find difficult to understand? Are there details left unanswered? Do you have philosophical questions regarding some of the points made? }
+
+{
+    As of August 2018, the Myria project has officially concluded so I have a doubt whether this visualization tool still is just restricted to Myria DB or can it be extended to other Db's.
+    
+    What is the difference between Spark, Hive, Tableau and this tool is something I'm still trying to figure about.
+    
+    They didn't mention the ease of learning Perfopticon to the users as to how much effort is required to use it.
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 7. How might the concepts or approaches in this paper relate to your course project? If you don't yet have a course project in mind, answer the questions with your best guess of what your course project could be. }
+
+{
+    This paper clearly helps me out in planning the evaluation part of my project. It gives me the idea as to how to draw ideas in implementing the evaluation and conducting experiments on users and how to track their results for a visualization project.
+
+}
+
+
+\end{document}

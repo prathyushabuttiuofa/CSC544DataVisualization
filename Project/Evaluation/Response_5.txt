@@ -1,0 +1,82 @@
+Age: 27
+Gender: Female
+Race: Asian
+Occupation: Software Developer
+Familiarity with domain: Medium.
+
+Our Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: Drawing bike rent locations on a map which can itself be filtered using the bar graphs at the bottom. I see clustering of these stations are particular locations.
+
+2. What do you think this visualization is trying to achieve?
+A: Help users determine where bikes are rented more and where the stations are found easily. Maybe also help in analysis of how these stations are being added on various places as time goes by.
+
+3. Does the visualization look appealing to you when you first see it?
+A: I don't like the roughness of the design. There's many things that need to be cleaned up and pathced for it to look appealing.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes the task however is easy to perform and whatever it was meaning to show, I can easily figure out.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Interactions are smooth but data is loaded very slowly.
+
+Close-Ended Questions
+
+1. Which area of LA has more bike stations?
+A: The middle area has more stations but later I saw similar number of stations in other areas too.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: Some stations have more rents while others have less. Maybe the older stations have more rents because of the intrinsic nature of people to return to the same bike station.
+
+3. What overall trend can be inferred from the bike rent data?
+A: Overall, I see the bike stations growing in number and the number of rents growing as well.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: There is unequal distribution. Its more popular in the middle area but later I also saw it being dense in top right side of the map.
+
+5. Are there any outliers in the bike share data?
+A: I couldn't find any.
+
+New York CitiBike Visualization
+
+Open-Ended Questions
+
+1. What can you infer from the visualization at a first glance?
+A: I can infer bike availables at each station, the path between the stations, the moving traffic between the stations and I see clustering of these stations at some particular locations.
+
+2. What do you think this visualization is trying to achieve?
+A: Help users determine where the stations are, how is the traffic and various filters are available. Maybe also help in analysis of how these stations are being added on various places as time goes by.
+
+3. Does the visualization look appealing to you when you first see it?
+A: I like the design. It's visually appealing and can figure out things in first glance.
+
+4. Do you think the visualization fulfills its initial objective?
+A: Yes, I can easily figure out.
+
+5. Can you easily interact with the visualization without any confusions?
+A: Interactions are smooth and very interactive.
+
+Close-Ended Questions
+
+1. Which area of NYC has more bike stations?
+A: NYC is a huge city and the bike stations are more in Chinatown, Mudson Square and the central part of the city.
+
+2. How are the bike rents distributed across a certain area of bike stations?
+A: Some stations have more rents while others have less. Maybe the older stations have more rents because of the intrinsic nature of people to return to the same bike station.
+
+3. What overall trend can be inferred from the bike rent data?
+A: Overall, I see the bike stations growing in number and the number of rents growing as well.
+
+4. Is the bike rent system equally distributed around the city? Where is it most popular? 
+A: There is equal distribution in NYC. In the central part of the city it's more popular.
+
+5. Are there any outliers in the bike share data?
+A: I couldn't find any.
+
+Comparing the two visualizations?
+
+1. Do you prefer this visualization or the one shown before?
+A: I prefer NYC as it is more interactive and shows the data trends by giving filtering options.

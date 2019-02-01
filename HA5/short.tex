@@ -1,0 +1,145 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 5 \\
+	}
+\date{November 29, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\noindent
+{\bf 1. What are the main steps in a Sugiyama style graph layout? }
+
+{
+
+	The main steps in Sugiyama style graph layout are : 
+
+
+    \begin{itemize}
+    	\item Define an ordering: Ranks (longest path from root) and May reverse some edges in this step
+		\item Cycle Removal: The graph representing the dfa might contain cycles. These have to be removed.
+		\item Layer Assignment: Vertices/nodes are assigned to layers. Dummy vertices and edges are added to the graph so that every edge connects only vertices from adjacent layers. Vertices in a layer are reordered so that edge crossings are minimised.
+		\item Edge Crossing Reduction: Layer by layer reduce the edge crossings. Number of edge crossings does not depend on the precise position of the vertices, but only the ordering of the vertices within each layer (combinatorial, rather than geometric)
+		\item Coordinate Assignment: Assign coordinates to vertices. Finalize x-coordinates for nodes. Route edges.
+
+
+	\end{itemize}
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. What are the advantages of an adjacency matrix over a node-link diagram for general graph drawing? }
+
+{
+	Node-link diagrams are easier to understand, better for path-tasks. Domain-specific layouts can go a long way.
+	Adjacency matrices scale better, good for clusters and dense graphs. \\
+
+	Strengths: 
+	\begin{itemize}
+	    \item Dense representation
+	    \item Removes clutter for dense graphs
+	    \item Cliques/clusters apparent if well-ordered
+    \end{itemize}
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. Name a benefit of using a fisheye view over a lens. }
+
+{ 
+    \begin{itemize}
+    \item   Alters the contextual regions to create more room for the focus regions.
+	\item   Fish eye lens places a focused subset in the context of a greater subset.
+    \item	Produces strong visual distortion intended to create a wide panoramic or hemispherical image.
+    \end{itemize}
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. Describe a context (e.g., a situation in which you are designing a visualization) in which the Hobo-Dyer map projection would be a good choice. Explain why it is a good choice in that context. }
+
+{
+	A map that not only shows true size comparisons, but also turns the world upside down to challenge North-South perceptions.This map is know as cylindrical projection because of its straight lines of longitude and latitude. Shape is sacrificed in order to represent countries in their correct proportional size. This is done by narrowing the lines of latitude as they approach the poles, in order to compensate for the missing convergence of the lines of longitude. It’s a really interesting and alternative thought provoking alternative view of our planet.
+
+
+	Suppose I want to know the malnutrition among the children all over the world this map would be my go to choice as it's easy to depict the intention I have to commumnicate through Hobo Dyer map as this is of great help in displaying the countries with their proportional size makes my work easier and convenient. I can analyze different trends based on geographical location, country size like which country is the more effected.
+	  
+}
+
+\vspace{2ex}\noindent
+{ \bf 5. Describe the marks, channels, and encoding rules for a Dorling cartogram.  }
+
+{
+   	The Dorling Cartogram is a technique for representing data for areas that eschews geography in preference for (normally) a geometric shape that represents the unit areas. Circles are usually the shape of choice since they can be more neatly positioned. A Dorling cartogram maintains neither shape, topology or object centroids and is an abstract representation of the spatial pattern of the phenomena being mapped. Data values are realized by size of the circle: the bigger the circle, the larger the data value. Dorling cartograms disrupt the adjacency relations but somewhat preserve the relative positions of regions, and are good at getting the “big picture” here beijing olympics medal count. 
+
+   	\begin{itemize}
+		\item Marks - circles , points, map (though dorling cartograms preserve neither shape nor topology) 
+		\item Channels - areas , position of the circle, color, tooltips
+		\item Encoding - the number of total medals received by each country the bigger the radius/area of the circle , position of the circle is matched with it's geographic location of the world map. Color tells us the continents the countries it belongs to. Tooltips tell us the number of the medals and their category.
+	\end{itemize}
+
+}
+
+\vspace{2ex}\noindent
+{ \bf 6. Suppose I have a 3D uniform grid and at each point I have two values, density and luminance. What type of field do I have? Explain how you arrived at your conclusion.}
+
+{   
+	Types of Fields by Attribute Multiplicity tells us that two attributes per cell where the attributes are connected in some way leads to a vector field as density and luminance are connected. Example : Magnitude and direction leads to magnetic field or wind speed fields. 
+}
+
+\vspace{2ex}\noindent
+{ \bf 7. Consider a triangle with vertices (2,2), (7, 3), and (11, 9) with values 10, 25, and 45 respectively. Find the value at (9, 7). Show the mathematical steps arriving at such a solution, including the weights. Then, repeat the process to find the value at (6, 3). }
+
+{
+
+    Reference : https://math.stackexchange.com/questions/1727200/compute-weight-of-a-point-on-a-3d-triangle \\
+
+    The method involves first representing the triangle as a triplet of vectors (a=(a$_{x}$,a$_{y}$),b=(b$_{x}$,b$_{y}$),c=(c$_{x}$,c$_{y}$)) and the point as another vector p=(p$_{x}$,p$_{y}$) and then calculating the areas.
+
+    For Point P (9,7) the weight is calculated as follows : \\
+
+    $\bigtriangleup$ = (0.5) $\ast||$a - b$||\ast||$a - c$||$ = ((0.5) $\ast$ (06+63+22-14-33-18)) = 13 \\
+    $\bigtriangleup _{a}$ = (0.5)$\ast||$p - b$||\ast||$p - c$||$ = ((0.5) $\ast$ (63+77+27-33-81-49)) = 2 \\
+    $\bigtriangleup _{b}$ = (0.5)$\ast||$p - a$||\ast||$p - c$||$ = ((0.5) $\ast$ (18+77+18-22-81-14)) = 2 \\
+    $\bigtriangleup _{c}$ = (0.5)$\ast||$p - a$||\ast||$p - b$||$ = ((0.5) $\ast$ (06+49+18-14-27-14)) = 9 \\
+
+    k$_{a}$ = $\bigtriangleup _{a}$ / $\bigtriangleup$ = 2/13 = 0.1538 \\
+    k$_{b}$ = $\bigtriangleup _{b}$ / $\bigtriangleup$ = 2/13 = 0.1538 \\
+    k$_{c}$ = $\bigtriangleup _{c}$ / $\bigtriangleup$ = 9/13 = 0.6923 \\
+
+    W$_{p}$ = W$_{a}$ $\ast$ k$_{a}$ + W$_{b}$ $\ast$ k$_{b}$ + W$_{c}$ $\ast$ k$_{c}$ \\
+    W$_{p}$ = 10 $\ast$ (0.1538) + 25 $\ast$ (0.1538) + 45 $\ast$ (0.6923 ) \\
+    W$_{p}$ = 36.5365 \\
+
+    For Point P (6,3) the weight is calculated as follows : 
+
+    $\bigtriangleup$ = (0.5) $\ast||$a - b$||\ast||$a - c$||$ = ((0.5) $\ast$ (06+63+22-14-33-18)) = 13 \\
+    $\bigtriangleup _{a}$ = (0.5)$\ast||$p - b$||\ast||$p - c$||$ = ((0.5) $\ast$ (63+33+18-33-54-21)) = 3 \\
+    $\bigtriangleup _{b}$ = (0.5)$\ast||$p - a$||\ast||$p - c$||$ = ((0.5) $\ast$ (18+33+12-22-54-06)) = 9.5 \\
+    $\bigtriangleup _{c}$ = (0.5)$\ast||$p - a$||\ast||$p - b$||$ = ((0.5) $\ast$ (06+21+12-14-18-6)) = 0.5 \\
+
+    k$_{a}$ = $\bigtriangleup _{a}$ / $\bigtriangleup$ = 3/13 = 0.2307 \\
+    k$_{b}$ = $\bigtriangleup _{b}$ / $\bigtriangleup$ = 9.5/13 = 0.7307 \\
+    k$_{c}$ = $\bigtriangleup _{c}$ / $\bigtriangleup$ = 0.5/13 = 0.0384 \\
+
+    W$_{p}$ = W$_{a}$ $\ast$ k$_{a}$ + W$_{b}$ $\ast$ k$_{b}$ + W$_{c}$ $\ast$ k$_{c}$ \\
+    W$_{p}$ = 10 $\ast$ (0.2307) + 25 $\ast$ (0.7307) + 45 $\ast$ (0.0384 ) \\
+    W$_{p}$ = 22.3025 \\
+}
+
+\end{document}

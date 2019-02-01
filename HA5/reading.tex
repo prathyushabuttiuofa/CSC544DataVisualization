@@ -1,0 +1,370 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 5 \\}
+\date{November 29, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\section { Answers for B1 to B5 }
+\hfill \break
+
+\noindent
+{ \bf B1. Explain to a layperson: What is a hypercube? }
+{
+ 
+ Reference : https://researchblog.duke.edu/2017/04/26/visualizing-the-fourth-dimension/
+
+To create a 1D line, we take a point, make a copy, move the copied point parallely to some distance away, and then connect the two points with a line.Similarly, a square can be formed by making a copy of a line and connecting them to add the second dimension. So, to create a hypercube, we move identical 3D cubes parallel to each other, and then connect them with four lines.
+
+In geometry, a hypercube is an n-dimensional analogue of a square (n = 2) and a cube (n = 3). It is a closed, compact, convex figure whose 1-skeleton consists of groups of opposite parallel line segments aligned in each of the space's dimensions, perpendicular to each other and of the same length. A unit hypercube's longest diagonal in n-dimensions is equal to $\sqrt{{n}}$ .  An n-dimensional hypercube is also called an n-cube or an n-dimensional cube. 
+  
+}
+
+\vspace{2ex}\noindent
+{ \bf B2. Explain to a layperson: What is a simplex?  }
+{
+    
+    Reference : https://en.wikipedia.org/wiki/Simplex
+    
+    In geometry, a simplex is a generalization of the notion of a triangle or tetrahedron to arbitrary dimensions. Specifically, a k-simplex is a k-dimensional polytope which is the convex hull of its k + 1 vertices.
+    
+    For example, a 2-simplex is a triangle, a 3-simplex is a tetrahedron, and a 4-simplex is a 5-cell. A single point may be considered a 0-simplex, and a line segment may be considered a 1-simplex. A simplex may be defined as the smallest convex set containing the given vertices. A regular simplex[1] is a simplex that is also a regular polytope. A regular n-simplex may be constructed from a regular (n − 1)-simplex by connecting a new vertex to all original vertices by the common edge length.
+}
+
+\vspace{2ex}\noindent
+{ \bf B3. Explain to a layperson: What is a convex hull?  }
+{
+    
+    Reference : Computational Geometry - Algorithms and Applications By Mark de Berg, Otfried Cheong, Marc van Kreveld, Mark Overmars
+    
+    Convex hull of a set of points as the smallest convex set containing the points or as the intersection of all convex sets containing the points. One can show that the convex hull of a set of points is exactly the set of all possible convex combinations of the points.we can therefore test whether a mixture can be obtained from the base mixtures by computing the convex hull of their representative points and checking whether the point representing the mixture lies inside it. The convex hull of the points representing the base mixtures which is a convex polytope represents the set of all possible mixtures.Convex hulls in particular in 3D space are used to detect collisions in computer animations.
+    
+    
+    In mathematics, the convex hull or convex envelope or convex closure of a set X of points in the Euclidean plane or in a Euclidean space (or, more generally, in an affine space over the reals) is the smallest convex set that contains X. For instance, when X is a bounded subset of the plane, the convex hull may be visualized as the shape enclosed by a rubber band stretched around X. Formally, the convex hull may be defined either as the intersection of all convex sets containing X, or as the set of all convex combinations of points in X. With the latter definition, convex hulls may be extended from Euclidean spaces to arbitrary real vector spaces; they may also be generalized further, to oriented matroids.
+}
+
+\vspace{2ex}\noindent
+{ \bf B4. How does the algorithm handle ambiguity? }
+{
+   
+   Algorithm is as mentioned : 
+
+    1.   Approximate  the intersection of the isosurface and grid edges using linear interpolation;
+
+    2.   For each hypercube h do:
+
+    a.   U$_{h}$,  Intersection  point of hypercube edges and isosurface;
+
+    b.   v$^{+}_{h}$,  Vertices of h with scalar values above the isovalue;
+
+    c.   Construct canonically  triangulated convex  hull of  W$^{+}_{h}$ = U $_{h} \cup$  V$^{+}_{h}$/ .
+
+    d.   Remove simplices  which lie on a facet of h. \\
+    
+   To ensure the triangulations between two adjacent hypercubes are consistent, they insert the points in lexicographically sorted order.They prove that, by inserting the points in lexicographic order, the “canonical” triangulations of the reconstructed isosurfaces in two adjacent hypercubes properly match at their boundaries. The incremental convex hull algorithm is not optimal, but provides a practical solution to their problem of generating consistent triangulations.
+   
+   Instead of constructing the convex hull of W$^{+}_{h}$ containing the vertices V$^{+}_{h}$, they could have constructed the convex hull of W$^{-}_{h}$ which contains the vertices V$^{-}_{h}$. Doing so gives a different, although equally valid, isosurface. However, using W$^{+}_{h1}$  for hypercube h1 and W$^{-}_{h2}$ for an adjacent hypercube h2 could result in a mismatch on the face common to h1 and h2. So they have limited to use either of them consistently eliminating the problem discovered in Marching Cubes Algorithm.
+    
+}
+
+\vspace{2ex}\noindent
+{ \bf B5. What are the main steps and claims in the proof?  }
+{
+   
+    Algorithm is as mentioned : 
+
+    1.   Approximate  the intersection of the isosurface and grid edges using linear interpolation;
+
+    2.   For each hypercube h do:
+
+    a.   U$_{h}$,  Intersection  point of hypercube edges and isosurface;
+
+    b.   v$^{+}_{h}$,  Vertices of h with scalar values above the isovalue;
+
+    c.   Construct canonically  triangulated convex  hull of  W$^{+}_{h}$ = U $_{h} \cup$  V$^{+}_{h}$/ .
+
+    d.   Remove simplices  which lie on a facet of h. \\
+    
+    They claim given a regular grid sampling of a scalar field and an isovalue, they claim that their algorithm constructs a surface that approximates the true isosurface for that isovalue.
+    
+    First, they show that their algorithm does actually construct a surface, not simply a set of arbitrarily connected simplices. More specifically, it constructs a triangulated (d-1)-manifold with boundary in R$_{d}$. Note that a valid isosurface need not be a manifold, but, in many applications, it is desirable that the surface be a manifold.
+    
+    The second claim is that the surface constructed by their algorithm approximates the exact isosurface from the     scalar function.
+    
+    They start with a technical lemma showing that the convex hull of W$^{+}$ (U) is full dimensional, i.e., if f has dimension k, then so does conv(W$^{+}$ (U)) (using Lemma 1.)
+    
+    Using Lemma 2, they show that the set of simplices returned by their algorithm forms a simplicial complex
+    
+    They claim that to show a simplicial complex is a manifold with boundary, they need only check its vertices.(proven in lemma 3) 
+    
+    Finally, they apply Theorem 1 and Lemma 3 to show that S$^{+}$ (U) = $\cap$ $ _{h \in G}$ S$^{+}$(U) is a manifold with boundary.
+    
+}
+
+\section{Isosurface Construction in Any Dimension Using Convex Hulls by Praveen Bhaniramka, Rephael Wenger, and Roger Crawfis}
+\hfill \break
+
+
+\noindent
+{\bf 1. What problem is this paper trying to solve?}
+
+{
+    This paper is trying to solve the construction of iso-surfaces in any continuous scalar field using convex hulls for any dimension.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. Why is this problem considered a visualization problem?}
+
+{
+   Iso-surface visualization is an important problem in computer visualization, with applications in fields such as medical imaging, fluid dynamics and chemistry. We can look at any dimension in an easy way by constructing their iso-surfaces piece-wise within each hyper-cube in the grid using the convex hull of an appropriate set of points. 
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. Why is the problem important? }
+
+{
+    The problem is important because isosurfaces are especially well suited for visualizing large volume datasets on graphics hardware optimized for polygon meshes. For this reason, isosurface visualization has found applications in such diverse areas as medical imaging, geophysics, and meteorology. Another area where the need for isosurface visualization arises is in three-dimensional graphing of mathematical functions.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. How does this paper contribute to solving the problem? }
+
+{
+    This paper suggests an algorithm which would work for any dimension in constructing an iso-surface. Their algorithm constructs the iso-surface within a hyper-cube by finding the convex hull of an appropriate set of points and retaining the portion of its boundary that lies in the interior of the hyper-cube. We prove that these surface patches correctly join together to form a (d-1)-manifold with boundary.
+    
+}
+
+
+\vspace{2ex}\noindent
+{\bf 5. What approaches are used to construct the contributions?}
+
+{
+    The authors have suggested an algorithm by comparing what was lacking in similar algorithms. They have mentioned that those algorithms increase the time and space complexity of the resulting iso-surface by a corresponding factor. The algorithm they have suggested constructs an isosurface piece-wise within each hypercube, thus avoiding the costly split into simplices. Our algorithm constructs the isosurface within a hypercube by finding the convex hull of an appropriate set of points and retaining the portion of its boundary that lies in the interior of the hypercube. They prove that these surface patches correctly join together to form a (d-1)-manifold with boundary. They demonstrate the usefulness of the algorithm by presenting some applications of isosurface construction in R$^{4}$.
+    In this paper, they prove that the algorithm produces a higher dimensional surface with no “cracking” or “holes,” which approximates the true iso-surface.
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 6. How are the contributions of the paper evaluated or justified? }
+
+{
+    First, they have compared the other algorithms developed in the same area and gave a high level idea of where they are wrong and what needs to be corrected.
+
+    Second, Using the four-dimensional lookup table, they demonstarted how easily they can construct isosurfaces for four-dimensional data. They have visualized isosurfaces that lie in R$^{4}$ by slicing them along different axes. Additionally, animation of time-varying data can be smoothed by slicing and rendering the isosurface between coarse time steps.
+    
+    Third, they have supported their algorithm with proof of correctness in an elaborative way where they clearly mention how iso-surface are generated by first generating the location of the isosurface vertices and then constructs the triangulated isosurface. 
+
+    Finally, they mentioned that isosurfaces in R$^{4}$ can be used to morph isosurfaces lying in R$^{3}$. The source and target isosurfaces are identified with parallel hyperplanes in four dimensions. Again, this technique can be used in any dimension. 
+    
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 7. What do you think are this paper's strengths? }
+
+{
+    The paper strength's is the their algorithm , proof of correctness, how they have implemented their algorithm on slices of a time varying iso-surface for the Jet Shock Wave Data Set along different axes and the applications of their algorithm to four-dimensional isosurface construction to time varying isosurfaces, interval volumes, and morphing.
+
+}
+
+\vspace{2ex}\noindent
+{\bf 8. What do you think could be improved about this paper? }
+
+{
+    I feel the authors need to specify the the modifications Durst have suggested and what they have improved.
+
+    Brief introduction to the jargon they have used in the paper would have made the paper easier to understand.
+    
+}
+
+\vspace{2ex}\noindent
+{\bf 9. What future directions do the authors suggest?}
+
+{
+    The authors are trying to improve the computation of the lookup table. The authors have not mentioned any improvements explicitly like in other papers I have read in this course.
+}
+
+\vspace{2ex}\noindent
+{\bf 10. What other future directions would you suggest? }
+
+{
+   Support for dynamic data is needed. One possible direction would be to compare and contrast the marching cubes extension outlined in this paper with other previously suggested algorithms, such as Dual Marching Cubes or Manifold Dual Contouring. 
+   As merge operations were not fully explored in this paper, it may be worthwhile to identify more efficient merge schemes, especially for applications involving dynamic data. Furthermore, different triangulation schemes should be investigated. 
+}
+
+\vspace{2ex}\noindent
+{\bf 11. What questions do you have about this paper? For example: Were these things you find difficult to understand? Are there details left unanswered? Do you have philosophical questions regarding some of the points made?}
+
+{
+    This paper had been very difficult to analyze. It needs lot of background analysis to understand what the author wants to tell us.
+    
+    How did they calculate the time and space complexity of the algorithm?
+    
+    Can the performance of the algorithm be improved further?
+    
+    
+
+}
+
+\vspace{2ex}\noindent
+{\bf 12. How might the concepts or approaches in this paper relate to your course project? }
+
+{
+    This paper concepts and approaches do not relate to my course project which is a map visualization for Los Angeles metro bike share system. 
+
+}
+\hfill \break
+\section{Graphical Inference for Invofis by Hadley Wickham, Dianne Cooke, Heike Hofmann, and Andreas Buja
+Lee Byron \& Martin Wattenbergr}
+\hfill \break
+\noindent
+{\bf 1. What problem is this paper trying to solve?}
+
+{
+    This paper is trying to solve the question as to how do we know if what we see is really there and what is the role of statistics in infovis.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. Why is this problem considered a visualization problem?}
+
+{
+   The problem is a visualization problem because when visualizing data we need to know how to avoid falling into the trap of apophenia.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. Why is the problem important? }
+
+{
+    The problem is important because they want to emphasize the importance of statistics in infovis. Most statistics research focuses on making sure to minimize the chance of finding a relationship that does not exist. Unfettered curiosity results in findings that disappear when others attempt to verify them, while rampant skepticism prevents anything new from being discovered.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. How does this paper contribute to solving the problem? }
+
+{
+
+    Infovis has been concerned with discovering new relationships, and statistics with preventing spurious relationships from being reported. This paper uses graphical inference that bridges between two conflicting drives to provide a tool for skepticism that can be applied in a curiosity-driven context. It allows us to uncover new findings, while controlling for apophenia. Graphical inference also helps us answer the question “Is what we see really there?” 
+    
+    The goal of many statistical methods is to perform inference, to draw conclusions about the population that the data sample came from. This is why statistics is useful as we want to apply to a large fraction of humanity.
+    
+    The authors describe the two protocols of graphical inference, “Rorschach” helps the analyst calibrate their understanding of uncertainty and the “lineup” provides a protocol for assessing the significance of visual discoveries, protecting against the discovery of spurious structure. 
+    
+}
+
+
+\vspace{2ex}\noindent
+{\bf 5. What approaches are used to construct the contributions?}
+
+{
+    
+    The authors have introduced two new techniques for rigorous statistical inference of visual discoveries. The “Rorschach” helps the analyst calibrate their understanding of uncertainty and the “lineup” provides a protocol for assessing the significance of visual discoveries, protecting against the discovery of spurious structure. They mentioned about false positives which is an interesting way to start.
+    
+    They use statistical justice system (SJS) to come to an understanding about the evidence that is based on the similarity between the accused and known innocents, using a specific metric defined by the test statistic.
+    
+    They have used null hypothesis and explored a lot.
+     
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 6. How are the contributions of the paper evaluated or justified? }
+
+{
+   The authors state the two types of mistakes they can make in a decision : they can acquit a guilty dataset (a type II error, or false negative), or falsely convict an innocent dataset (a type I error, or false positive). 
+   
+   They use SJS system which convicts based on difference between the accused and a set of known innocents.
+   
+   This paper has described two protocols to bring rigorous statistical inference to freeform data exploration. Both techniques center around identifying a null hypothesis, which then generates null datasets and null plots. The Rorschach provides a tool for calibrating our expectations of null data, while the line-up brings the techniques of formal statistical hypothesis testing to visualization and even cites relevant examples like tag clouds and scatter plots.
+   
+   The power of a statistical test is the probability of correctly convicting a guilty data set. The capacity to detect specific structure in plots can depend on many things, including an appropriate choice of plot, which is where the psychology of perception is very important
+    
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 7. What do you think are this paper's strengths? }
+
+{
+    The paper strength's is the process they have analyzed the scenarios and the statistical importance and the two protocols they have implemented with good examples. They mentioned about null datasets and null hypothesis which makes it a good way to analyze what an innocent data might look like. 
+
+}
+
+\vspace{2ex}\noindent
+{\bf 8. What do you think could be improved about this paper? }
+
+{
+    This paper should have mentioned what kind of probabilistic models they have used in generating the null datasets. The paper should have explored any existing techniques for rigorous statistical inference of visual discoveries and compared them with Rorschach and lineup. 
+}
+
+\vspace{2ex}\noindent
+{\bf 9. What future directions do the authors suggest?}
+
+{
+    The authors have provided a reference implementation of their ideas in the R package nullabor. They hope others can build upon to make tools that can be used in a wide variety of analytic settings.
+}
+
+\vspace{2ex}\noindent
+{\bf 10. What other future directions would you suggest? }
+
+{
+   I would like to see more research on the ethical and politics aspect of the data visualization. Need to include informed consent aspect in obtaining the data.
+   
+}
+
+\vspace{2ex}\noindent
+{\bf 11. What questions do you have about this paper? For example: Were these things you find difficult to understand? Are there details left unanswered? Do you have philosophical questions regarding some of the points made?}
+
+{
+    The paper was simple to understand and very neatly written.
+    
+    I would like to know whether we can build visualization without politics? This question was unanswered. 
+    Effects of data visualization in influencing users? 
+    How can we make a data more persuasive?
+    How can we evaluate the ethical aspect of data visualization apart from the statistical aspect?
+}
+
+\vspace{2ex}\noindent
+{\bf 12. How might the concepts or approaches in this paper relate to your course project? }
+
+{
+    This paper clearly tells me that data can be manipulated and we need to be sure of the data when implementing the visualization we are to develop. If there is no genuine  information about the data statistics then it is highly likely that the data cannot be trusted. We need to be ethical and produce proper results on datasets we obtain in visualization.
+    
+    We obtained data from Los Angeles Metro bike share's website they post genuine data about their rides and hence we were able to develop a good and genuine visualization.
+
+}
+
+\end{document}

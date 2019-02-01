@@ -1,0 +1,121 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 1 \\
+	\large Modeling Color Difference for Visualization Design by Danielle Albers Szafir \\}
+\date{September 14, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\noindent
+{\bf 1. What problem is this paper trying to solve and why is the problem
+   important?}
+
+{
+	This paper tries to solve the data misinterpretation in visualizations due to color encoding which is a common way to preserve the important differences in the data.
+	
+	The problem is important because people's abilities to perceive color is different. Most of the metrics for predicting perceived differences come from controlled models of human vision. Because human vision is involved it might limit the utility of applying perceptual models to visualization design in practice.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. How does this paper contribute to solving the problem? What approaches are
+   used? }
+
+{
+	This paper tries to develop quantitative metrics to help people use color more effectively in visualizations. It even states that for the color encoding to be effective the mapping between the colors and values must preserve the important difference in the data.
+	
+	This paper presents a series of crowd sourced experiments used to model color difference perceptions for visualizations focusing on three mark types - points, lines and bars. They even construct probabilistic models of different perceptions to generate data-driven metrics for designers to consider when creating, evaluation the visualization models.
+	
+	This paper tries to formalize the relationship between elongation and perceived color difference thereby increasing the visualization effectiveness.
+	
+	The paper proposes probabilistic guidance to visualization designers that enables them to make more informed decisions about their color encoding grounded in what viewers will likely perceive.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. How are the contributions of the paper evaluated or justified? }
+
+{
+	This paper mentions that visualizations violate the assumptions of conventional color science models in three ways -  simple world assumption, isolation assumption, geometric assumption. It clearly mentions that the goal
+    of this paper is to provide preliminary steps towards color difference models that account for all three violations simultaneously.
+    
+    It conducted experiments on each mark type (points, lines, or bars) encoded as part of a visualization (scatter-plot, line graph, or bar chart). It compares the difference perceptions for points, bars and lines using a series of mixed-factor experiments conducted in Amazon's Mechanical Truk. It classifies the quantitative results on analysis and modeling and computes model based on Stimuli, Procedure, Pre-processing, size X axis models, size-independent models, normalized color difference. It presents us with the methods used, results, analysis of factors, modeling used for each chart type.
+
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. What do you think are this paper's strengths? What do you think could be
+   improved? }
+
+{
+	The paper strengths are it's Quantitative analysis of Bar, Scatter and Line Charts. It succeeds in proposing the visual designers with a quantitative and probabilistic model for guiding color encoding design and evaluation.
+	
+	The paper must have mentioned the process it went through to arrive at a specific modeling in each chart. The paper must have mentioned how the sampling rate predicted a 7\% margin of error based on 50\% discriminability rate. It was unclear. The paper must have mentioned how ecological validity is involved in modeling control as some of these may lead to inaccurate predictions in certain cases.They have to verify the models’ predictions against expert practices.
+
+}
+
+
+\vspace{2ex}\noindent
+{\bf 5. What are future directions for this work? Include both those suggested by
+   the authors and suggestions of your own.}
+
+{
+	Future studies will explore how robust popular encoding are for different visualization types.
+	The models were determined based on crowdsourced participants. 
+	They have used CIELAB color difference models. 
+	Future work should extend the models to consider more holistic set of design factors.
+	Future work will need to consider how to build data-driven adaptations of these models while still allowing efficient computation and application.
+	
+	They can consider proposing models for different chart types instead of restricting just to points, lines and bars. They can extend this color perception by including the factors of hue and saturation in more depth. The proposed visualizations were assumed to support task simplicity so this needs to extend for complex tasks as well. The data should be mapped from real/actual/raw data in the future. More complex color difference models needs to be used in the future.
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 6. What questions do you have about this paper? For example: Were these things
+   you find difficult to understand? Are there details left unanswered? Do you
+have philosophical questions regarding some of the points made? }
+
+
+{
+    This paper helped me realize the importance of color perception in visualization. 
+    I would like to know the other color difference models that can be explored.
+    I would like to know how this model can be implemented for real world applications.
+    I would like to further explore about the various models mentioned in the paper.
+    I have no knowledge about JND, ANCOVA and many others. I had difficulty in understanding the paper in the begining but after 2-4 reads I was able to understand the paper.
+    
+
+}
+
+
+
+\vspace{2ex}\noindent
+{\bf 7. How might the concepts or approaches in this paper relate to your course
+   project? If you don't yet have a course project in mind, answer the
+questions with your best guess of what your course project could be. }
+
+{
+	The concepts and the way the models were determined for points,bars and lines will help me to determine more probabilistic and quantitative visualization. It helps me to line up the factors that might be responsible for determining color perception difference for my future project. It even helps me to think critically on the factors that I have not known regarding color perception and what should be considered to evaluate my visualization model in the future project.
+
+}
+
+
+\end{document}

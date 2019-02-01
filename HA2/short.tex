@@ -1,0 +1,74 @@
+\documentclass{article}[12pt]
+
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+
+\begin{document}
+
+
+\title{Homework Assignment 2 \\
+	}
+\date{September 14, 2018}
+
+\author{
+   Prathyusha Butti \\
+   pbutti@email.arizona.edu
+}
+
+\maketitle
+
+\noindent
+{\bf 1. How do you create marks in HTML/Javascript? How do you create and alter channels?}
+
+{
+	Marks are generally points, lines and areas in visualization.
+	We can create points in HTML by simple HTML and CSS code by using the border-radius property set to 50\% and give equal height and width. 
+    We can create horizontal lines in HTML by using hr tag and vertical lines can be created using border property and few CSS changes. 
+    Areas can be of different shapes and sizes. We can create areas using area tag or by simple CSS by specifying the height and width. 
+	Apart from all this we can create points, lines and areas using SVGs.
+    
+    Channels are properties of mark appearance, often used to encode attributes or other information. Positions, size, shapes and color to name a few. We can create a channel by giving the position of the element like x,y coordinates and alter them by changing the values of those positions. When we alter the color of the channel we notice the change in the information.
+    
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 2. Below is John Snow's map of London from 1854 during a cholera outbreak. John Snow was one of the early figures in epidemiology. The map shows the number of cholera cases. Snow used this map to support his theory that cholera was being spread by a contaminated well rather than prevailing theories about bad air or the constitutions of poor people. What are the data items, attributes, and data abstractions? What are the marks, channels, and encoding rules? }
+
+{
+	Data Items/Attributes - Geographical Map of London,  Cholera Outbreak
+	Marks -  Lines, bars, rectangular areas
+	Channels - Positions, Thickness 
+	Encoding Rules - Lines encode the area affected due to cholera, Thickness of the streets, Bars encode the intensity of the cholera outbreak, rectangular areas encode the region of London which was contaminated by the well.
+}
+
+
+
+
+\vspace{2ex}\noindent
+{\bf 3. "Bar charts should have a y-axis that starts at zero." is a common visualization guidelines. How do the principles of expressivenes and effectiveness as well as the definitions of effectiveness we discussed in class support this guideline?}
+
+{ 
+    Expressiveness Principle states that "Encoding should express all of, and only, the information in the data" - In accordance to this principle bar chart is encoded by length.
+    
+    Effectiveness Principle states that "The more important the data/attribute, the more salient the encoding should be" - When we interpret the bar chart we compare the bars based on the length of the bar and analyze the data hence we should have a y-axis that starts at zero to compare the values properly. For example if the value of two bars are 35 and 70 in length and we want to conclude that 70 = 2 * 35 by looking at the bar chart. For this scenario we cannot start the y-axis at 35 as there will be no bar at 35 and only a bar for 70 which the user cannot interpret so if we start from 0 on y-axis we can clearly tell that 70 is twice of 35 by just looking at the chart. 
+
+}
+
+
+
+
+\vspace{2ex}\noindent
+{ \bf 4. Why and how is visualization useful? If it isn't useful, explain why and how it is not. }
+
+{
+	Visualization minimizes the time to answer a variety of questions, generates new questions on the data available, we gain better understanding of the data and gives us confidence to trust the data.
+
+	Visualization is useful in placing the fuzzy data in a visual context to analyze it better. We do exploratory data analysis as the entire information is not available. Patterns, trends and correlations that might go undetected in raw data and can be easily recognized with data visualization. 	 
+
+}
+
+
+
+\end{document}

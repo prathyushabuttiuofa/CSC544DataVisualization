@@ -1,0 +1,10 @@
+For each evaluation session with a test subject, follow the below mentioned steps sequentially. Note that these will have to be live evaluation sessions with the subject:
+
+1. Enter the age, occupation and familiarity of the test subject.
+2. Brief the subject regarding the problem statement, data domain and the evaluation process.
+3. Provide him with the visualization made by us ask him to study and interact with it. Start the timer for 2 minutes.
+4. After 2 minutes, close the visualization and present him with the list of open-ended questions. The subject will have to verbally recite the answers while you type them in.
+5. Next, present him with the close-ended questions and repeat same process as 4. This time, make a note of how long he takes to answer each question. A mental note will be sufficient for now.
+6. The question and answer session should be strictly 5 minutes long.
+7. Now, show the subject the New York CitiBike visualization and repeat the same process starting from 3 to 5.
+8. Finally, ask them which visualization design they would prefer.
